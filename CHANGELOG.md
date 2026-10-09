@@ -1,4 +1,7 @@
 # Changelog
 
-## 0.2.0 — 2026-10-09
-Added editable worship category metadata, stable daily-prayer keys and Zikr contexts; two short public-domain original Arabic Quran supplications with source/rights metadata. No modern translation, Hadith, Tafsir or font dataset bundled. Manifest and content contract tests pass.
+## 0.4.0
+
+Enforce KFGQPC as the sole approved canonical Quran source. Replace full unapproved corpus and provider manifests with official source metadata, strict private archive import validation and non-text fixtures. Remove independently transcribed Quran excerpts. Require ZIP/DOM for exact official XML imports.
+
+Earlier tags remain in Git history; 0.3.0 Quran data is superseded and must not be used.

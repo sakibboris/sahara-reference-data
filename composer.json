@@ -5,7 +5,8 @@
   "license": "proprietary",
   "require": {
     "php": "^8.2",
-    "ext-simplexml": "*"
+    "ext-zip": "*",
+    "ext-dom": "*"
   },
   "autoload": {
     "psr-4": {

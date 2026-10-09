@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "provider": "kfgqpc",
+  "format": "Official XML DATA/ROW",
+  "text_policy": "Preserve field Unicode exactly; no normalization, replacement, reshaping or generated Quran text.",
+  "fields": {
+    "id": "canonical ordered integer",
+    "jozz": "1..30",
+    "page": "1..604",
+    "sura_no": "1..114",
+    "sura_name_en": "verbatim",
+    "sura_name_ar": "verbatim",
+    "line_start": "1..15",
+    "line_end": "1..15",
+    "aya_no": "canonical integer per Surah",
+    "aya_text_unicode": "verbatim display text including official Ayah marker",
+    "aya_text_emlaey": "verbatim search text"
+  }
+}
