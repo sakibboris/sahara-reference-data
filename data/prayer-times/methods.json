@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "methods": {
+    "mwl": {
+      "name": "Muslim World League",
+      "fajr_angle": 18,
+      "isha_angle": 17
+    },
+    "isna": {
+      "name": "ISNA",
+      "fajr_angle": 15,
+      "isha_angle": 15
+    },
+    "egyptian": {
+      "name": "Egyptian",
+      "fajr_angle": 19.5,
+      "isha_angle": 17.5
+    },
+    "karachi": {
+      "name": "Karachi",
+      "fajr_angle": 18,
+      "isha_angle": 18
+    },
+    "umm_al_qura": {
+      "name": "Umm al-Qura",
+      "fajr_angle": 18.5,
+      "isha_minutes": 90,
+      "ramadan_isha_minutes": 120
+    }
+  }
+}

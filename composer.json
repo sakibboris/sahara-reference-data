@@ -1,0 +1,17 @@
+{
+  "name": "sakibboris/sahara-reference-data",
+  "description": "Governed SAHARA reference configuration and schemas",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sahara\\Reference\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  }
+}

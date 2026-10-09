@@ -1,0 +1,15 @@
+{
+  "id": "quran-complex-hafs",
+  "name": "King Fahd Complex Hafs source candidate",
+  "version": "candidate",
+  "type": "external-source-metadata",
+  "source": "King Fahd Glorious Quran Printing Complex",
+  "source_url": "https://qurancomplex.gov.sa/quran-dev/",
+  "license_status": "pending-confirmation",
+  "redistribution_status": "pending-confirmation",
+  "caching_status": "pending-confirmation",
+  "attribution_required": true,
+  "last_reviewed": "2026-10-09",
+  "schema_version": 1,
+  "notes": "Metadata only. No source text, font or archive is redistributed in this repository."
+}

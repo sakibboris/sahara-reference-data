@@ -1,0 +1,15 @@
+{
+  "id": "prayer-methods",
+  "name": "SAHARA prayer calculation configuration",
+  "version": "0.1.0",
+  "type": "configuration",
+  "source": "SAHARA-authored configuration of published mathematical parameters",
+  "source_url": "https://praytimes.org/docs/calculation",
+  "license_status": "own-configuration",
+  "redistribution_status": "permitted",
+  "caching_status": "permitted",
+  "attribution_required": true,
+  "last_reviewed": "2026-10-09",
+  "schema_version": 1,
+  "data_path": "data/prayer-times/methods.json"
+}

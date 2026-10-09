@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SAHARA dataset manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "type",
+    "source",
+    "source_url",
+    "license_status",
+    "redistribution_status",
+    "caching_status",
+    "attribution_required",
+    "last_reviewed",
+    "schema_version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "license_status": {
+      "enum": [
+        "own-configuration",
+        "permitted",
+        "pending-confirmation",
+        "prohibited"
+      ]
+    },
+    "redistribution_status": {
+      "enum": [
+        "permitted",
+        "pending-confirmation",
+        "prohibited"
+      ]
+    },
+    "caching_status": {
+      "enum": [
+        "permitted",
+        "pending-confirmation",
+        "prohibited"
+      ]
+    },
+    "attribution_required": {
+      "type": "boolean"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "data_path": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
