@@ -7,5 +7,5 @@ foreach(['daily_fard','wajib','sunnah','nafl','fard_kifayah','janazah','grave_vi
 if($metadata['categories']['wajib']['classification_authority']!=='user-selected')throw new RuntimeException('Disputed categories must remain configurable');
 echo "PASS worship metadata contract\n";
 $duas=(new Sahara\Reference\Catalog)->duaExcerpts();
-if(count($duas['entries'])!==2 || $duas['entries'][1]['reference']!=='Quran 20:114 (supplication excerpt)')throw new RuntimeException('Source metadata missing');
-echo "PASS original-Arabic excerpt provenance\n";
+if($duas['entries']!==[])throw new RuntimeException('Unapproved Quran excerpts must not be bundled');
+echo "PASS no unapproved Quran excerpt corpus\n";

@@ -25,17 +25,6 @@ final class Catalog {
         return $data;
     }
 
-    public function quranFiles(): array {
-        $files=[];
-        foreach(['text'=>'tanzil-quran','metadata'=>'tanzil-metadata'] as $key=>$id){
-            $manifest=json_decode(file_get_contents($this->root.'/manifests/'.$id.'.json'),true,512,JSON_THROW_ON_ERROR);
-            if(($manifest['license_status']??null)!=='permitted'||($manifest['redistribution_status']??null)!=='permitted')throw new \RuntimeException('Quran source is not permitted');
-            $path=realpath($this->root.'/'.$manifest['data_path']);$root=realpath($this->root.'/data/quran');
-            if(!$path||!$root||!str_starts_with($path,$root.DIRECTORY_SEPARATOR)||!hash_equals($manifest['sha256'],hash_file('sha256',$path)))throw new \RuntimeException('Quran source integrity check failed');
-            $files[$key]=$path;
-        }
-        return $files;
-    }
     public function validate(): void {
         $schema=json_decode(file_get_contents($this->root.'/schemas/dataset-manifest.schema.json'),true,512,JSON_THROW_ON_ERROR);
         $ids=[];
