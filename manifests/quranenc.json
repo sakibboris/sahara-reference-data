@@ -1,0 +1,16 @@
+{
+  "id": "quranenc",
+  "name": "QuranEnc translation and Tafsir API",
+  "version": "api-v1",
+  "type": "provider-policy",
+  "source": "QuranEnc.com",
+  "source_url": "https://quranenc.com/en/home/api",
+  "license_status": "permitted",
+  "redistribution_status": "permitted",
+  "caching_status": "permitted",
+  "attribution_required": true,
+  "last_reviewed": "2026-10-09",
+  "schema_version": 1,
+  "conditions": "Unchanged content, publisher/source and edition version attribution, preserve transcript information, follow latest version, no inappropriate advertising. No corpus bundled. Runtime catalog refresh and version-keyed bounded caching; editions lacking publisher version are linked to source instead of republished.",
+  "status_note": "Arabic Moyassar and Bengali Zakaria ayah APIs respond, but official translations/list omits their edition versions on review date. Inline republication remains unavailable unless current publisher version metadata is verified."
+}

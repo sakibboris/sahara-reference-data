@@ -4,7 +4,8 @@
   "type": "library",
   "license": "proprietary",
   "require": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "ext-simplexml": "*"
   },
   "autoload": {
     "psr-4": {
@@ -14,7 +15,8 @@
   "scripts": {
     "test": [
       "php tests/run.php",
-      "php tests/worship.php"
+      "php tests/worship.php",
+      "php tests/quran.php"
     ]
   }
 }
