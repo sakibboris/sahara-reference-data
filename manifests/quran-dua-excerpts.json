@@ -1,0 +1,16 @@
+{
+  "id": "quran-dua-excerpts",
+  "name": "Two short Quran supplication excerpts",
+  "version": "0.2.0",
+  "type": "configuration",
+  "source": "Original seventh-century Arabic Quran; SAHARA transcription in simple orthography, cross-checked against verse references",
+  "source_url": "https://quran.com/2/201",
+  "license_status": "permitted",
+  "redistribution_status": "permitted",
+  "caching_status": "permitted",
+  "attribution_required": true,
+  "last_reviewed": "2026-10-09",
+  "schema_version": 1,
+  "data_path": "data/worship/duas.json",
+  "rights_note": "Public-domain original Arabic wording only. No modern translation, Tafsir, font, audio or website dataset is redistributed. English headings are SAHARA-authored navigation labels, not quotations."
+}

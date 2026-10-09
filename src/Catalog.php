@@ -9,6 +9,22 @@ final class Catalog {
     public function prayerMethods(): array {
         return json_decode(file_get_contents($this->root.'/data/prayer-times/methods.json'),true,512,JSON_THROW_ON_ERROR)['methods'];
     }
+    public function worshipMetadata(): array {
+        $data=json_decode(file_get_contents($this->root.'/data/worship/metadata.json'),true,512,JSON_THROW_ON_ERROR);
+        if(($data['schema_version']??null)!==1||!is_array($data['categories']??null)||!is_array($data['daily_prayers']??null)||!is_array($data['zikr_contexts']??null))throw new \RuntimeException('Invalid worship metadata');
+        foreach($data['categories'] as $key=>$category){if(!preg_match('/^[a-z_]{1,40}$/D',$key)||empty($category['name'])||($category['classification_authority']??null)!=='user-selected')throw new \RuntimeException('Invalid worship category');}
+        return $data;
+    }
+    public function duaExcerpts(): array {
+        $data=json_decode(file_get_contents($this->root.'/data/worship/duas.json'),true,512,JSON_THROW_ON_ERROR);
+        if(($data['schema_version']??null)!==1||!is_array($data['entries']??null))throw new \RuntimeException('Invalid Dua excerpt catalog');
+        $keys=[];
+        foreach($data['entries'] as $entry){foreach(['key','title','arabic','reference','source_url','context'] as $field){if(!is_string($entry[$field]??null)||trim($entry[$field])==='')throw new \RuntimeException('Invalid excerpt field');}
+            if(isset($keys[$entry['key']])||!filter_var($entry['source_url'],FILTER_VALIDATE_URL))throw new \RuntimeException('Invalid excerpt identity/source');$keys[$entry['key']]=true;
+        }
+        return $data;
+    }
+
     public function validate(): void {
         $schema=json_decode(file_get_contents($this->root.'/schemas/dataset-manifest.schema.json'),true,512,JSON_THROW_ON_ERROR);
         $ids=[];

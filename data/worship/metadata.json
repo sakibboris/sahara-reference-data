@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "notice": "Categories organize personal records; they do not resolve differences in fiqh. Select classifications according to your practice.",
+  "daily_prayers": {
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha"
+  },
+  "categories": {
+    "daily_fard": {
+      "name": "Daily Fard",
+      "description": "Record the five daily prayers.",
+      "classification_authority": "user-selected"
+    },
+    "wajib": {
+      "name": "Wajib",
+      "description": "Use the classification followed in your own practice.",
+      "classification_authority": "user-selected"
+    },
+    "sunnah": {
+      "name": "Sunnah",
+      "description": "Record prayers you classify as Sunnah.",
+      "classification_authority": "user-selected"
+    },
+    "nafl": {
+      "name": "Nafl",
+      "description": "Record voluntary prayers.",
+      "classification_authority": "user-selected"
+    },
+    "fard_kifayah": {
+      "name": "Fard Kifayah",
+      "description": "Record communal obligations according to your practice.",
+      "classification_authority": "user-selected"
+    },
+    "janazah": {
+      "name": "Janazah",
+      "description": "Record funeral prayer participation.",
+      "classification_authority": "user-selected"
+    },
+    "grave_visit": {
+      "name": "Grave / Cemetery Visits",
+      "description": "Record a visit separately from prayer completion.",
+      "classification_authority": "user-selected"
+    }
+  },
+  "zikr_contexts": {
+    "daily": "Daily Zikr",
+    "morning": "Morning Adhkar",
+    "evening": "Evening Adhkar",
+    "after_prayer": "After-Prayer Adhkar",
+    "tasbih": "Tasbih",
+    "dua": "Dua Library"
+  }
+}

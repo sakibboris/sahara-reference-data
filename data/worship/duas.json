@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "notice": "Short original Arabic Quran excerpts, independently transcribed in simple orthography; no translation, Tafsir or prescribed repetition count is included.",
+  "entries": [
+    {
+      "key": "quran-2-201",
+      "title": "Good in this life and the next",
+      "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "reference": "Quran 2:201 (supplication excerpt)",
+      "source_url": "https://quran.com/2/201",
+      "context": "dua"
+    },
+    {
+      "key": "quran-20-114",
+      "title": "Seeking knowledge",
+      "arabic": "رَبِّ زِدْنِي عِلْمًا",
+      "reference": "Quran 20:114 (supplication excerpt)",
+      "source_url": "https://quran.com/20/114",
+      "context": "dua"
+    }
+  ]
+}

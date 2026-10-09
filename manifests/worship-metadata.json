@@ -1,0 +1,15 @@
+{
+  "id": "worship-metadata",
+  "name": "SAHARA worship organization metadata",
+  "version": "0.2.0",
+  "type": "configuration",
+  "source": "SAHARA-authored editable labels, not a fiqh ruling",
+  "source_url": "https://github.com/sakibboris/sahara-reference-data",
+  "license_status": "own-configuration",
+  "redistribution_status": "permitted",
+  "caching_status": "permitted",
+  "attribution_required": true,
+  "last_reviewed": "2026-10-09",
+  "schema_version": 1,
+  "data_path": "data/worship/metadata.json"
+}
