@@ -14,4 +14,8 @@ The developer platform offers resources for application development. Public stan
 
 English/Bengali/Urdu/Hindi ayah-linked translations are NOT YET AVAILABLE in SAHARA: official publication pages exist, but a versioned, machine-readable ayah mapping has not been verified. No alternate provider is used.
 
-The 0.4.0 correction removes the unapproved text and translation manifests added in 0.3.0 and independently transcribed Quran Dua excerpts. Normal Git history is retained.
+The 0.4.0 correction removes the unapproved text and translation manifests added in 0.3.0 and independently transcribed Quran Dua excerpts.
+
+On 2026-10-11 the project owner authorized sanitation of reference-data history. All occurrences of data/quran/tanzil-uthmani.xml and data/quran/tanzil-metadata.xml were removed. Sanitized v0.4.0 is 11166dd26262bcef059f81745f17f832e70d5a12; v0.1.0/v0.2.0 remain unchanged and v0.3.0 was retired. Old clones must be recloned or carefully reconciled without merging retired history. Hosting caches, forks and old clones may retain retired objects; this is not a claim of global deletion.
+
+Public Git may contain schemas, manifests, hashes, source metadata, validators/importers and permitted small fixtures. Complete official Qur'an/Tafsir corpora, original archives and official fonts must remain private/off-repository unless explicit redistribution permission is confirmed. Application provider approvals do not authorize public package redistribution. The private pre-sanitation recovery bundle is kept outside all three public repositories.
